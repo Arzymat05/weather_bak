@@ -12,7 +12,7 @@ model ruWeather {
   name        String  @unique
   temperature Int?
   day         String?
-  humidity    String?
+  humidity    Int?
   pressure    Int?
   wind        String?
 }
@@ -22,7 +22,7 @@ model engWeather {
   name        String  @unique
   temperature Int?
   day         String?
-  humidity    String?
+  humidity    Int?
   pressure    Int?
   wind        String?
 }

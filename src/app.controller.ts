@@ -63,6 +63,12 @@ export class AppController {
         res.status(201).json(weather);
     }
 
+    @Delete('deleteOne/:name/:lang')
+    async deleteOne(@Param('name') name: string, @Param('lang') lang: string, @Req() req: any, @Res() res: any) {
+        const weather = await this.Arzymat.deleteOne(name, lang);
+        res.status(201).json(weather);
+    }
+
     @Post('admin')
     async isAdmin(@Body() dto: isAdmin, @Req() req: any, @Res() res: any) {
         if ('admin' === dto.password && 'admin' === dto.name) {
