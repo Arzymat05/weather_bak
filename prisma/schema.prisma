@@ -7,12 +7,22 @@ datasource db {
   url      = env("db")
 }
 
-model Weather  {
-    id       Int    @unique @default(autoincrement())
-    name String @unique
-    temperature String?
-    day String?
-    humidity String?
-    pressure Int?
-    wind String?
+model ruWeather {
+  id          Int     @unique @default(autoincrement())
+  name        String  @unique
+  temperature Int?
+  day         String?
+  humidity    String?
+  pressure    Int?
+  wind        String?
+}
+
+model engWeather {
+  id          Int     @unique @default(autoincrement())
+  name        String  @unique
+  temperature Int?
+  day         String?
+  humidity    String?
+  pressure    Int?
+  wind        String?
 }
