@@ -97,6 +97,7 @@ export class WeatherRepository {
                     humidity: weather.humidity,
                     pressure: weather.pressure,
                     wind: weather.wind,
+                    windSpeed: weather.windSpeed
                 }
             })
         }
@@ -108,6 +109,7 @@ export class WeatherRepository {
                 humidity: weather.humidity,
                 pressure: weather.pressure,
                 wind: weather.wind,
+                windSpeed: weather.windSpeed
             }
         })
     }

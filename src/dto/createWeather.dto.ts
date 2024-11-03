@@ -6,6 +6,7 @@ export class createWeatherDto {
     humidity: number;
     pressure: number;
     wind: string;
+    windSpeed: number;
 }
 
 export class updateWeatherDto {
@@ -14,4 +15,5 @@ export class updateWeatherDto {
     humidity: number;
     pressure: number;
     wind: string;
+    windSpeed: number;
 }

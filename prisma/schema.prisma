@@ -15,6 +15,7 @@ model ruWeather {
   humidity    Int?
   pressure    Int?
   wind        String?
+  windSpeed   Int?
 }
 
 model engWeather {
@@ -25,4 +26,5 @@ model engWeather {
   humidity    Int?
   pressure    Int?
   wind        String?
+  windSpeed   Int?
 }
